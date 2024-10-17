@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_84a340fbee4e113900bd3ac094213518 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_84a340fbee4e113900bd3ac094213518" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_84a340fbee4e113900bd3ac094213518 = L.map(
+                "map_84a340fbee4e113900bd3ac094213518",
+                {
+                    center: [21.883, -102.2916],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a1b5b9a11d421cc3f171d4ec44abd5d0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a1b5b9a11d421cc3f171d4ec44abd5d0.addTo(map_84a340fbee4e113900bd3ac094213518);
+        
+    
+            var marker_587b377797f95b39fb991d23c341b0c0 = L.marker(
+                [21.883, -102.2916],
+                {}
+            ).addTo(map_84a340fbee4e113900bd3ac094213518);
+        
+    
+            var icon_f3e7d38c6e2c3ef2252959bdc1793b84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_587b377797f95b39fb991d23c341b0c0.setIcon(icon_f3e7d38c6e2c3ef2252959bdc1793b84);
+        
+    
+        var popup_152d76ca0a93228cedc0a9ff0ea6de8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_991fb8db9960d18033397e8fd89f6bd5 = $(`<div id="html_991fb8db9960d18033397e8fd89f6bd5" style="width: 100.0%; height: 100.0%;">Zona A - Peligro: Alto</div>`)[0];
+                popup_152d76ca0a93228cedc0a9ff0ea6de8b.setContent(html_991fb8db9960d18033397e8fd89f6bd5);
+            
+        
+
+        marker_587b377797f95b39fb991d23c341b0c0.bindPopup(popup_152d76ca0a93228cedc0a9ff0ea6de8b)
+        ;
+
+        
+    
+    
+            var marker_a0905cd9a244dae0e96d054b92f95413 = L.marker(
+                [21.895, -102.292],
+                {}
+            ).addTo(map_84a340fbee4e113900bd3ac094213518);
+        
+    
+            var icon_cecf82a110c41c8b199e4be7fcbb5dc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a0905cd9a244dae0e96d054b92f95413.setIcon(icon_cecf82a110c41c8b199e4be7fcbb5dc5);
+        
+    
+        var popup_b0757cb2ffd1ac27e87694c0539f1731 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25adaf09a39025787cc0daab5f0ea015 = $(`<div id="html_25adaf09a39025787cc0daab5f0ea015" style="width: 100.0%; height: 100.0%;">Zona B - Peligro: Bajo</div>`)[0];
+                popup_b0757cb2ffd1ac27e87694c0539f1731.setContent(html_25adaf09a39025787cc0daab5f0ea015);
+            
+        
+
+        marker_a0905cd9a244dae0e96d054b92f95413.bindPopup(popup_b0757cb2ffd1ac27e87694c0539f1731)
+        ;
+
+        
+    
+    
+            var marker_c8ddeeead7edb65c7457f94e341e3bf4 = L.marker(
+                [21.879, -102.2925],
+                {}
+            ).addTo(map_84a340fbee4e113900bd3ac094213518);
+        
+    
+            var icon_71e7127968c6ac9b10107c78da6765e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c8ddeeead7edb65c7457f94e341e3bf4.setIcon(icon_71e7127968c6ac9b10107c78da6765e7);
+        
+    
+        var popup_a48da57124b672b7b0b3490d1bc8533c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_245c454d7292603d73303ec840f7ff7a = $(`<div id="html_245c454d7292603d73303ec840f7ff7a" style="width: 100.0%; height: 100.0%;">Zona C - Peligro: Medio</div>`)[0];
+                popup_a48da57124b672b7b0b3490d1bc8533c.setContent(html_245c454d7292603d73303ec840f7ff7a);
+            
+        
+
+        marker_c8ddeeead7edb65c7457f94e341e3bf4.bindPopup(popup_a48da57124b672b7b0b3490d1bc8533c)
+        ;
+
+        
+    
+    
+            var marker_c3d41a21a59f1840d8128193640e2fac = L.marker(
+                [21.8845, -102.29],
+                {}
+            ).addTo(map_84a340fbee4e113900bd3ac094213518);
+        
+    
+            var icon_4cad5aea6a994ef070397efc38ddeed3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3d41a21a59f1840d8128193640e2fac.setIcon(icon_4cad5aea6a994ef070397efc38ddeed3);
+        
+    
+        var popup_e29b05be567522a414eb09e01356a7c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc0781969c1e392e091f91a159e1b403 = $(`<div id="html_bc0781969c1e392e091f91a159e1b403" style="width: 100.0%; height: 100.0%;">Zona D - Peligro: Alto</div>`)[0];
+                popup_e29b05be567522a414eb09e01356a7c6.setContent(html_bc0781969c1e392e091f91a159e1b403);
+            
+        
+
+        marker_c3d41a21a59f1840d8128193640e2fac.bindPopup(popup_e29b05be567522a414eb09e01356a7c6)
+        ;
+
+        
+    
+    
+            var marker_7ff34d70068826921ffa16cb64d2ffe3 = L.marker(
+                [21.887, -102.293],
+                {}
+            ).addTo(map_84a340fbee4e113900bd3ac094213518);
+        
+    
+            var icon_d0ac27356017cf2cf7e44d933586b89b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7ff34d70068826921ffa16cb64d2ffe3.setIcon(icon_d0ac27356017cf2cf7e44d933586b89b);
+        
+    
+        var popup_07bfcea5105daa1897993ba5c4000a5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cc36c6a65aca4746bf9777bb80365c1 = $(`<div id="html_5cc36c6a65aca4746bf9777bb80365c1" style="width: 100.0%; height: 100.0%;">Zona E - Peligro: Bajo</div>`)[0];
+                popup_07bfcea5105daa1897993ba5c4000a5b.setContent(html_5cc36c6a65aca4746bf9777bb80365c1);
+            
+        
+
+        marker_7ff34d70068826921ffa16cb64d2ffe3.bindPopup(popup_07bfcea5105daa1897993ba5c4000a5b)
+        ;
+
+        
+    
+    
+            var marker_c970d2f08bfbcdb9c62dd74d0a3bfbbd = L.marker(
+                [21.89, -102.295],
+                {}
+            ).addTo(map_84a340fbee4e113900bd3ac094213518);
+        
+    
+            var icon_bf81aa3c858014f9cb2334d0f1c3598b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c970d2f08bfbcdb9c62dd74d0a3bfbbd.setIcon(icon_bf81aa3c858014f9cb2334d0f1c3598b);
+        
+    
+        var popup_b49cf86a22487de012c87249a330a2e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c12d0bb563764366a563d6986e0de27 = $(`<div id="html_8c12d0bb563764366a563d6986e0de27" style="width: 100.0%; height: 100.0%;">Zona F - Peligro: Medio</div>`)[0];
+                popup_b49cf86a22487de012c87249a330a2e3.setContent(html_8c12d0bb563764366a563d6986e0de27);
+            
+        
+
+        marker_c970d2f08bfbcdb9c62dd74d0a3bfbbd.bindPopup(popup_b49cf86a22487de012c87249a330a2e3)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,117 @@
+/* Auth.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('imagenes/eye-8054609_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333; /* Color del texto general */
+}
+
+.container, .container2, .container3 {
+    width: 400px;          /* Ancho del contenedor */
+    padding: 30px;        /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con opacidad */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borde suave */
+    border-radius: 15px;   /* Bordes más redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    text-align: center;
+    margin: 20px; /* Espacio entre contenedores */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque de fondo */
+}
+
+h2 {
+    text-align: center;
+    color: #007bff; /* Color del encabezado */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra para el texto */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold; /* Negrita para etiquetas */
+    color: #555; /* Color más oscuro */
+}
+
+input {
+    padding: 12px; /* Más espacio */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Transición suave al enfocar */
+}
+
+input:focus {
+    border-color: #007bff; /* Color de borde al enfocar */
+    outline: none; /* Elimina el contorno por defecto */
+}
+
+button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
+}
+
+p {
+    text-align: center;
+    margin-top: 20px; /* Espacio superior */
+    color: #666; /* Color más suave para el texto */
+}
+
+
+.container2, .container3 {
+    color: white; /* Color de texto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+    padding: 40px; /* Más espacio interno */
+    backdrop-filter: blur(8px); /* Efecto de desenfoque de fondo */
+}
+
+/* Animaciones suaves */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Comienza completamente transparente */
+    }
+    to {
+        opacity: 1; /* Termina completamente visible */
+    }
+}
+
+.container, .container2, .container3 {
+    animation: fadeIn 0.5s ease; /* Aplica la animación fadeIn */
+}
+
+.home-container {
+    display: flex; /* Usa flexbox para organizar los elementos en línea */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.side-image {
+    width: 130px; /* Ajusta el tamaño de las imágenes según necesites */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+.content {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    text-align: center; /* Centra el contenido */
+}
+
